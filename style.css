@@ -27,6 +27,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap; /* Permite que os botões se ajustem em telas menores */
 }
 
 nav button {
@@ -62,7 +63,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem em telas menores */
 }
 
 .prato {
@@ -92,4 +93,91 @@ h2 {
     color: #f7931e;
     font-weight: bold;
     font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 5px; /* Reduz o espaçamento entre os botões */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .prato {
+        width: 180px;
+    }
+
+    .prato img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: nowrap; /* Impede que os botões fiquem empilhados */
+        overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .prato {
+        width: 150px;
+    }
+
+    .prato img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .preco {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-wrap: nowrap; /* Mantém os botões lado a lado */
+        overflow-x: auto; /* Adiciona rolagem horizontal para telas muito pequenas */
+        justify-content: center; /* Centraliza os botões */
+    }
+
+    nav button {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .prato {
+        width: 120px;
+        padding: 8px;
+    }
+
+    .prato img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .preco {
+        font-size: 14px;
+    }
 }
