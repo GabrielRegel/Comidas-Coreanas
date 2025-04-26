@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinária Coreana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Culinária Coreana</h1>
+    <nav>
+      <button onclick="scrollToSection('apimentados')">Apimentados</button>
+      <button onclick="scrollToSection('suaves')">Suaves</button>
+      <button onclick="scrollToSection('bebidas')">Bebidas</button>
+      <button onclick="scrollToSection('sobremesas')">Sobremesas</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apimentados">
+      <h2>Pratos Apimentados</h2>
+      <div class="pratos" id="apimentados-list"></div>
+    </section>
+
+    <section id="suaves">
+      <h2>Pratos Suaves</h2>
+      <div class="pratos" id="suaves-list"></div>
+    </section>
+
+    <section id="bebidas">
+      <h2>Bebidas</h2>
+      <div class="pratos" id="bebidas-list"></div>
+    </section>
+
+    <section id="sobremesas">
+      <h2>Sobremesas</h2>
+      <div class="pratos" id="sobremesas-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

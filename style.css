@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #f7931e;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+}
+
+nav {
+    background-color: #ffcc99;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #f7931e;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav button:hover {
+    background-color: #ffa733;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.pratos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.prato {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer; /* Altera o ponteiro para o tipo "click" */
+}
+
+.prato:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prato img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.preco {
+    color: #f7931e;
+    font-weight: bold;
+    font-size: 18px;
+}
